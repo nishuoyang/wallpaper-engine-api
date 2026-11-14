@@ -1,0 +1,13 @@
+# Windows launchers MUST be checked out with CRLF line endings.
+#
+# cmd.exe parses a .bat by byte offset rather than by line: given a file whose
+# lines end in a bare LF it seeks to the wrong position and starts executing
+# mid-line, producing storms of
+#   "'...' is not recognized as an internal or external command"
+# Windows Script Host is more forgiving, but CRLF is still the correct form.
+#
+# `text` keeps LF in the repository and `eol=crlf` forces CRLF in every working
+# tree, so the scripts work regardless of the cloner's core.autocrlf setting.
+*.bat text eol=crlf
+*.cmd text eol=crlf
+*.vbs text eol=crlf

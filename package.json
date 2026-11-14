@@ -1,7 +1,34 @@
 {
   "name": "dsh-wallpaper-bg-we-api",
   "version": "0.5.1",
+  "description": "Wallpaper Engine 壁纸库只读 HTTP API：为 dsh-wallpaper-bg 的「WE 壁纸库」来源提供本机壁纸列表与当前桌面壁纸（独立手动服务形态）。",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test:bridge": "node test-bridge.js"
+  },
   "dependencies": {
     "wallpaper-engine-api": "^1.0.2"
+  },
+  "keywords": [
+    "wallpaper-engine",
+    "dsh",
+    "deepseek-harness",
+    "read-only",
+    "http-api",
+    "windows"
+  ],
+  "license": "MIT",
+  "author": "nishuoyang",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nishuoyang/wallpaper-engine-api.git"
+  },
+  "homepage": "https://github.com/nishuoyang/wallpaper-engine-api#readme",
+  "bugs": {
+    "url": "https://github.com/nishuoyang/wallpaper-engine-api/issues"
+  },
+  "engines": {
+    "node": ">=20"
   }
 }
